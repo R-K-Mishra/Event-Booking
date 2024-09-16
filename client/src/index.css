@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-event{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    max-width: 93vw;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.signup-form form, .signin-form form, .forgotpassword form, .resetpassword form, .createEvent form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.signup-form h1, .signin-form h1, .forgotpassword h1, .resetpassword h1, .createEvent h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+.signin-form h3, .signup-form h3, .forgotpassword h3, .resetpassword h3{
+    margin-top: 15px;
+}
+
+
+.tmp{
+
+    /* background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('./home.jpeg') no-repeat center center/cover; */
+    width: 100%;
+    height: 100vh;
+    /* opacity: 40%; */
+    /* /* color:#888888;    
+    text-shadow: 1px 0 #888888; */
+    /* letter-spacing:1px; */
+    /* font-weight:bold;  */
+    /* text-shadow: 0px 2px, 2px 0px, 2px 2px;
+    background: radial-gradient(circle at 10% 50.5%, rgb(255, 127, 42) 0%, rgb(255, 77, 0) 40%, rgb(255, 0, 0) 100%); */
+    /* text-decoration: transparent; */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.head-orange{
+    color:#ff6a00;    
+    text-shadow: 1px 0 #ff6a00;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+.head-blue{
+    color:#0015ff;    
+    text-shadow: 1px 0 #0015ff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+.head-black{
+    color:#000000;    
+    text-shadow: 1px 0 #000000;
+    letter-spacing: 1px; 
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+.head-white{
+    color:#ffffff;    
+    text-shadow: 1px 0 #ffffff;
+    letter-spacing: 1px; 
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+
+.primary-input{
+    @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600;
+}
+
+.primary-label{
+    @apply peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 peer-focus:top-[6px] -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+}
+
+.primary-btn{
+    @apply bg-orange-500 text-white hover:bg-orange-600 hover:text-white rounded hover:shadow-md hover:shadow-[#c2c2c2]
+}
+.primary-bg{
+    @apply bg-[#1f2937]
+}
